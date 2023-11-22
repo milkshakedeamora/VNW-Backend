@@ -3,7 +3,7 @@ import java.util.InputMismatchException;
 import java.util.Random;
 import java.util.Scanner;
 
-public class App {
+public class Megasena{
     private static final int ARRAY_LENGTH = 7;
 
     int[] numerosEscolhidos = new int[ARRAY_LENGTH];
@@ -104,7 +104,7 @@ public class App {
     }
 
     public static void main(String[] args) {
-        App App = new App();
+        Megasena App = new Megasena();
         App.obterNumerosEscolhidos();
         App.gerarNumerosSorteados();
         System.out.print("Números escolhidos:");
