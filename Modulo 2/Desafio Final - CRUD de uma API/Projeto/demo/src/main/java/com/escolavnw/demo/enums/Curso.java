@@ -1,0 +1,18 @@
+package com.escolavnw.demo.enums;
+public enum Curso {
+    FULLSTACK_CSHARP,
+    FULLSTACK_JAVASCRIPT,
+    BACKEND_PYTHON,
+    BACKEND_JAVA,
+    BACKEND_RUBY,
+    BACKEND_CSHARP,
+    FRONTEND_REACT, 
+    FRONTEND_ANGULAR,
+    UX_UI,
+    DESIGN,
+    ENGENHARIA_DE_SOFTWARE,
+    DATA_ANALYTICS,
+    CIBERSEGURANÇA,
+    GAME_DEVELOPER
+  }
+  
