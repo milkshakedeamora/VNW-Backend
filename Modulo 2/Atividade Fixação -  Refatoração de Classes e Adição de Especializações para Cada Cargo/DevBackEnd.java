@@ -1,4 +1,7 @@
-package br.com.vainaweb.backendt1.classeabstrata;
+import java.time.LocalDate;
+
+import Enum.Genero;
+import Enum.Senioridade;
 
 public class DevBackEnd extends Colaborador {
 
@@ -9,8 +12,12 @@ public class DevBackEnd extends Colaborador {
 		// TODO Auto-generated constructor stub
 	}
 
-	public DevBackEnd(String nome, String cpf, int idade, String habilidadeTecnica) {
-		super(nome, cpf, idade);
+	public DevBackEnd(String nome, String cpf, double salario, int idade, Genero genero, Senioridade senioridade, LocalDate contrato, String habilidadeTecnica) {
+		super(nome, cpf, salario, idade, genero, senioridade, contrato);
+		this.habilidadeTecnica = habilidadeTecnica;
+	}
+	public DevBackEnd(String nome, String cpf, double salario, int idade, Genero genero, Senioridade senioridade, String habilidadeTecnica) {
+		super(nome, cpf, salario, idade, genero, senioridade);
 		this.habilidadeTecnica = habilidadeTecnica;
 	}
 

@@ -1,4 +1,7 @@
-package br.com.vainaweb.backendt1.classeabstrata;
+import java.time.LocalDate;
+
+import Enum.Genero;
+import Enum.Senioridade;
 
 public class Designer extends Colaborador {
 
@@ -12,8 +15,12 @@ public class Designer extends Colaborador {
 	}
 
 
-	public Designer(String nome, String cpf, int idade, String habilidadeTecnica) {
-		super(nome, cpf, idade);
+	public Designer(String nome, String cpf, double salario, int idade, Genero genero, Senioridade senioridade, LocalDate contrato, String habilidadeTecnica) {
+		super(nome, cpf, salario, idade, genero, senioridade, contrato);
+		this.habilidadeTecnica = habilidadeTecnica;
+	}
+	public Designer(String nome, String cpf, double salario, int idade, Genero genero, Senioridade senioridade, String habilidadeTecnica) {
+		super(nome, cpf, salario, idade, genero, senioridade);
 		this.habilidadeTecnica = habilidadeTecnica;
 	}
 
